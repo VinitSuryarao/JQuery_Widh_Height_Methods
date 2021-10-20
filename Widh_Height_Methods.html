@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+   <style>
+      #bdy{
+         padding: 30px;
+         margin: 20px;
+         border: 10px solid black;
+      }
+   </style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+               // Width
+               $('#btnWidth').click(function(){
+                 console.log("Width =" + $('#bdy').width());
+                 console.log("innerWidth =" + $('#bdy').innerWidth());
+                 console.log("outerWidth =" + $('#bdy').outerWidth());
+                 console.log("outerWidth() =" + $('#bdy').outerWidth(true));
+                 
+               });
+
+                // Height
+                $('#btnHeight').click(function(){
+                  console.log("Height =" + $('#bdy').height());
+                 console.log("innerHeight =" + $('#bdy').innerHeight());
+                 console.log("outerHeight =" + $('#bdy').outerHeight());
+                 console.log("outerHeight() =" + $('#bdy').outerHeight(true));
+               });
+              
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy" style="background-color: palegreen;">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <button id="btnWidth"> Width</button> 
+   <button id="btnHeight"> Height </button>
+</body>
+</html>
